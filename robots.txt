@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gaborandi.github.io/rally-site/sitemap.xml
