@@ -799,9 +799,9 @@ body[dir="rtl"] .proof-list p {
   border-radius: 8px;
   background:
     linear-gradient(90deg, transparent 49.15%, rgba(255, 250, 240, 0.76) 49.15% 50.85%, transparent 50.85%),
-    linear-gradient(180deg, transparent 43.5%, rgba(255, 250, 240, 0.52) 43.5% 44.2%, transparent 44.2%),
+    linear-gradient(180deg, transparent 23%, rgba(255, 250, 240, 0.34) 23% 23.45%, transparent 23.45% 43.5%, rgba(255, 250, 240, 0.56) 43.5% 44.2%, transparent 44.2% 75%, rgba(255, 250, 240, 0.34) 75% 75.45%, transparent 75.45%),
     linear-gradient(90deg, transparent 13%, rgba(255, 250, 240, 0.38) 13% 13.4%, transparent 13.4% 86.6%, rgba(255, 250, 240, 0.38) 86.6% 87%, transparent 87%),
-    linear-gradient(180deg, rgba(29, 109, 193, 0.22) 0 59%, rgba(182, 90, 60, 0.25) 59% 100%);
+    linear-gradient(180deg, rgba(35, 92, 57, 0.72) 0 59%, rgba(182, 90, 60, 0.35) 59% 100%);
   box-shadow: 0 30px 90px rgba(16, 24, 32, 0.10);
   opacity: 0.95;
   pointer-events: none;
@@ -841,8 +841,10 @@ body[dir="rtl"] .proof-list p {
   border-radius: 12px;
   transform: translateX(-50%);
   background:
-    radial-gradient(circle at 50% 8%, rgba(255, 255, 255, 0.34), transparent 22%),
-    linear-gradient(180deg, rgba(7, 17, 31, 0.10), rgba(7, 17, 31, 0.02));
+    radial-gradient(circle at 50% 6%, rgba(255, 255, 255, 0.28), transparent 22%),
+    linear-gradient(90deg, transparent 16%, rgba(255, 250, 240, 0.24) 16% 16.5%, transparent 16.5% 83.5%, rgba(255, 250, 240, 0.24) 83.5% 84%, transparent 84%),
+    linear-gradient(180deg, transparent 45%, rgba(255, 250, 240, 0.28) 45% 45.5%, transparent 45.5%),
+    linear-gradient(180deg, rgba(35, 92, 57, 0.18), rgba(7, 17, 31, 0.03));
   filter: blur(0.2px);
   pointer-events: none;
 }
@@ -897,7 +899,7 @@ body[dir="rtl"] .proof-list p {
 .screen-picker {
   width: min(100%, 350px);
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
   margin: 14px auto 0;
 }
@@ -933,11 +935,12 @@ body[dir="rtl"] .proof-list p {
   border-top: 1px solid var(--line);
   color: var(--paper-soft);
   background:
+    linear-gradient(90deg, transparent 11.8%, rgba(255, 250, 240, 0.24) 11.8% 12.15%, transparent 12.15% 87.85%, rgba(255, 250, 240, 0.24) 87.85% 88.2%, transparent 88.2%),
     linear-gradient(90deg, transparent 49.45%, rgba(255, 250, 240, 0.42) 49.45% 50.55%, transparent 50.55%),
     linear-gradient(180deg, transparent 27%, rgba(255, 250, 240, 0.25) 27% 27.35%, transparent 27.35% 72.65%, rgba(255, 250, 240, 0.25) 72.65% 73%, transparent 73%),
     radial-gradient(circle at 50% 0%, rgba(231, 184, 90, 0.19), transparent 40%),
-    linear-gradient(180deg, var(--hard-court-deep), #135ea8 55%, #0c3f76);
-  box-shadow: 0 0 0 100vmax #135ea8;
+    linear-gradient(90deg, rgba(15, 79, 145, 0.98) 0 25%, rgba(141, 64, 46, 0.98) 25% 50%, rgba(23, 71, 46, 0.98) 50% 75%, rgba(55, 71, 79, 0.98) 75% 100%);
+  box-shadow: 0 0 0 100vmax #164f70;
   clip-path: inset(0 -100vmax);
 }
 
@@ -962,10 +965,65 @@ body[dir="rtl"] .proof-list p {
 }
 
 .screen-grid figure {
+  position: relative;
+  display: grid;
+  align-content: start;
   margin: 0;
+  min-width: 0;
+  padding: 18px 14px 16px;
+  border: 1px solid rgba(255, 250, 240, 0.18);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 18px 48px rgba(7, 17, 31, 0.22);
+}
+
+.screen-grid figure::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(255, 250, 240, 0.28);
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  pointer-events: none;
+}
+
+.screen-grid figure::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: rgba(255, 250, 240, 0.25);
+  pointer-events: none;
+}
+
+.surface-card.hard-screen {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.22), transparent 28%),
+    #145ba2;
+}
+
+.surface-card.clay-screen {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 248, 225, 0.18), transparent 28%),
+    #9f472f;
+}
+
+.surface-card.grass-screen {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(232, 245, 233, 0.18), transparent 28%),
+    #1f663c;
+}
+
+.surface-card.asphalt-screen {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(176, 190, 197, 0.16), transparent 28%),
+    #26363d;
 }
 
 .small-phone {
+  z-index: 1;
   border-width: 8px;
   border-radius: 26px;
   box-shadow:
@@ -974,6 +1032,8 @@ body[dir="rtl"] .proof-list p {
 }
 
 .screen-grid figcaption {
+  position: relative;
+  z-index: 1;
   display: grid;
   gap: 4px;
   margin-top: 12px;

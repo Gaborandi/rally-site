@@ -10,11 +10,11 @@
   <meta property="og:description" content="Tennis becomes territory in a premium indie mobile game.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gaborandi.github.io/rally-site/">
-  <meta property="og:image" content="https://gaborandi.github.io/rally-site/assets/rally-screen-rally.png">
+  <meta property="og:image" content="https://gaborandi.github.io/rally-site/assets/rally-screen-grass.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="RALLY">
   <meta name="twitter:description" content="Tennis becomes territory in a premium indie mobile game.">
-  <meta name="twitter:image" content="https://gaborandi.github.io/rally-site/assets/rally-screen-rally.png">
+  <meta name="twitter:image" content="https://gaborandi.github.io/rally-site/assets/rally-screen-grass.png">
   <title>RALLY - Tennis Becomes Territory</title>
   <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%23101820"/><path d="M14 10h36v44H14z" fill="%232f7d5a"/><path d="M14 32h36" stroke="%23fffaf0" stroke-width="3"/><circle cx="44" cy="20" r="6" fill="%23e7b85a"/></svg>'>
   <link rel="stylesheet" href="./styles.css">
@@ -75,18 +75,19 @@
         <div class="phone-frame hero-phone">
           <img
             data-screen-preview
-            src="./assets/rally-screen-rally.png"
-            alt="RALLY live match screenshot showing hard court, Rally Depth, bricks, ball, and paddle"
+            src="./assets/rally-screen-grass.png"
+            alt="RALLY live grass-court match screenshot showing Rally Depth, bricks, ball trail, and racket"
             width="780"
             height="1688"
           >
         </div>
         <div class="screen-picker" aria-label="Screenshot selector">
-          <button type="button" class="active" data-screen-choice data-screen-src="./assets/rally-screen-rally.png" data-caption-key="home.captureRally" data-i18n="home.captureRallyTab">Rally</button>
-          <button type="button" data-screen-choice data-screen-src="./assets/rally-screen-scouting.png" data-caption-key="home.captureScouting" data-i18n="home.captureScoutingTab">Scouting</button>
-          <button type="button" data-screen-choice data-screen-src="./assets/rally-screen-title.png" data-caption-key="home.captureMenu" data-i18n="home.captureMenuTab">Menu</button>
+          <button type="button" data-screen-choice data-screen-src="./assets/rally-screen-hard.png" data-caption-key="home.captureHard" data-i18n="surfaces.hard">Hard</button>
+          <button type="button" data-screen-choice data-screen-src="./assets/rally-screen-clay.png" data-caption-key="home.captureClay" data-i18n="surfaces.clay">Clay</button>
+          <button type="button" class="active" data-screen-choice data-screen-src="./assets/rally-screen-grass.png" data-caption-key="home.captureGrass" data-i18n="surfaces.grass">Grass</button>
+          <button type="button" data-screen-choice data-screen-src="./assets/rally-screen-asphalt.png" data-caption-key="home.captureAsphalt" data-i18n="surfaces.asphalt">Asphalt</button>
         </div>
-        <p class="screen-caption" data-screen-caption data-i18n="home.captureRally">A live point: Rally Depth climbing while the opponent's coverage breaks open.</p>
+        <p class="screen-caption" data-screen-caption data-i18n="home.captureGrass">Grass court: a high lob hangs over a shifting coverage grid.</p>
       </div>
     </section>
 
@@ -94,32 +95,32 @@
       <div class="section-heading">
         <p class="eyebrow" data-i18n="home.screensEyebrow">Actual game screens</p>
         <h2 data-i18n="home.screensTitle">The public site now shows the game, not a placeholder.</h2>
-        <p class="section-lede" data-i18n="home.screensText">These are captures from the Canvas build: the title screen, scouting report, live hard-court match, and rally state with the ball in motion.</p>
+        <p class="section-lede" data-i18n="home.screensText">These are captures from the Canvas build across hard, clay, grass, and asphalt courts.</p>
       </div>
       <div class="screen-grid">
-        <figure>
+        <figure class="surface-card hard-screen">
           <div class="phone-frame small-phone">
-            <img src="./assets/rally-screen-title.png" alt="RALLY title screen with mode buttons" width="780" height="1688" loading="lazy" decoding="async">
+            <img src="./assets/rally-screen-hard.png" alt="RALLY hard-court match screenshot with topspin ball trail" width="750" height="1334" loading="lazy" decoding="async">
           </div>
-          <figcaption><strong data-i18n="home.screenMenuTitle">Title and modes</strong><span data-i18n="home.screenMenuText">The player lands on the complete mobile game surface.</span></figcaption>
+          <figcaption><strong data-i18n="home.screenHardTitle">Hard Court</strong><span data-i18n="home.screenHardText">Clean bounce, pure timing, bright tournament blue.</span></figcaption>
         </figure>
-        <figure>
+        <figure class="surface-card clay-screen">
           <div class="phone-frame small-phone">
-            <img src="./assets/rally-screen-scouting.png" alt="RALLY scouting report for Alex Reed on hard court" width="780" height="1688" loading="lazy" decoding="async">
+            <img src="./assets/rally-screen-clay.png" alt="RALLY clay-court match screenshot with slice ball trail" width="750" height="1334" loading="lazy" decoding="async">
           </div>
-          <figcaption><strong data-i18n="home.screenScoutTitle">Scouting report</strong><span data-i18n="home.screenScoutText">Opponent style and surface set the tennis expectation.</span></figcaption>
+          <figcaption><strong data-i18n="home.screenClayTitle">Clay</strong><span data-i18n="home.screenClayText">Slower contact, scuffed baseline, patient point-building.</span></figcaption>
         </figure>
-        <figure>
+        <figure class="surface-card grass-screen">
           <div class="phone-frame small-phone">
-            <img src="./assets/rally-screen-match.png" alt="RALLY match before serve with bricks as court coverage" width="780" height="1688" loading="lazy" decoding="async">
+            <img src="./assets/rally-screen-grass.png" alt="RALLY grass-court match screenshot with lob and Rally Depth six" width="750" height="1334" loading="lazy" decoding="async">
           </div>
-          <figcaption><strong data-i18n="home.screenMatchTitle">Coverage grid</strong><span data-i18n="home.screenMatchText">The brick wall reads as a defender's court coverage.</span></figcaption>
+          <figcaption><strong data-i18n="home.screenGrassTitle">Grass</strong><span data-i18n="home.screenGrassText">Low green court, risky deflections, deeper rallies.</span></figcaption>
         </figure>
-        <figure>
+        <figure class="surface-card asphalt-screen">
           <div class="phone-frame small-phone">
-            <img src="./assets/rally-screen-rally.png" alt="RALLY live rally with ball trail and Rally Depth" width="780" height="1688" loading="lazy" decoding="async">
+            <img src="./assets/rally-screen-asphalt.png" alt="RALLY asphalt-court match screenshot with smash ball trail" width="750" height="1334" loading="lazy" decoding="async">
           </div>
-          <figcaption><strong data-i18n="home.screenRallyTitle">Rally in motion</strong><span data-i18n="home.screenRallyText">Depth, ball trail, and open lanes make the point readable.</span></figcaption>
+          <figcaption><strong data-i18n="home.screenAsphaltTitle">Asphalt</strong><span data-i18n="home.screenAsphaltText">Dark street court, faster contacts, sharp finish pressure.</span></figcaption>
         </figure>
       </div>
     </section>
