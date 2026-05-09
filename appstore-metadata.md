@@ -18,6 +18,8 @@ Website languages:
 - Korean
 - Simplified Chinese
 
-Owner-side publishing step: create a public GitHub repository named
-`rally-site`, upload this `website/` directory to the repository root, enable
-GitHub Pages from `main` and `/ (root)`, then verify the four URLs above.
+Publishing status: completed on May 7, 2026 through GitHub's browser UI.
+Repository: `https://github.com/gaborandi/rally-site`
+Repository homepage URL: `https://gaborandi.github.io/rally-site/`
+GitHub Pages source: branch `main`, folder `/ (root)`.
+Repository About/Website field: updated through Google Chrome on May 8, 2026.

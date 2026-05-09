@@ -4,11 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101820">
-  <meta name="description" content="RALLY is a premium indie mobile game where tennis is played through brick-breaker mechanics.">
+  <meta name="description" content="RALLY is a premium indie mobile game where tennis becomes territory through brick-breaker court coverage, Rally Depth, expressive shots, and complete one-unlock play.">
+  <link rel="canonical" href="https://gaborandi.github.io/rally-site/">
   <meta property="og:title" content="RALLY">
   <meta property="og:description" content="Tennis becomes territory in a premium indie mobile game.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gaborandi.github.io/rally-site/">
+  <meta property="og:image" content="https://gaborandi.github.io/rally-site/assets/rally-screen-rally.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RALLY">
+  <meta name="twitter:description" content="Tennis becomes territory in a premium indie mobile game.">
+  <meta name="twitter:image" content="https://gaborandi.github.io/rally-site/assets/rally-screen-rally.png">
   <title>RALLY - Tennis Becomes Territory</title>
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%23101820"/><path d="M14 10h36v44H14z" fill="%232f7d5a"/><path d="M14 32h36" stroke="%23fffaf0" stroke-width="3"/><circle cx="44" cy="20" r="6" fill="%23e7b85a"/></svg>'>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -19,7 +27,10 @@
       <span>RALLY</span>
     </a>
     <nav class="site-nav" aria-label="Primary">
+      <a href="#screens" data-i18n="common.screens">Screens</a>
       <a href="#gameplay" data-i18n="common.gameplay">Gameplay</a>
+      <a href="#shots" data-i18n="common.shots">Shots</a>
+      <a href="#modes" data-i18n="common.modes">Modes</a>
       <a href="#premium" data-i18n="common.premium">Premium</a>
       <a href="./privacy/" data-i18n="common.privacy">Privacy</a>
       <a href="./support/" data-i18n="common.support">Support</a>
@@ -42,64 +53,144 @@
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero hero-with-screens">
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="home.eyebrow">Premium indie mobile game</p>
-        <h1 data-i18n="home.heroTitle">Tennis becomes territory.</h1>
-        <p class="lede" data-i18n="home.heroText">RALLY turns the opponent's court coverage into a shifting brick grid. Read the gaps, shape the shot, and build Rally Depth before you finish the point.</p>
+        <h1>RALLY</h1>
+        <p class="tagline" data-i18n="home.heroTitle">Tennis becomes territory.</p>
+        <p class="lede" data-i18n="home.heroText">Read the opponent's brick coverage like court positioning. Keep the exchange alive, build Rally Depth, and finish the open lane when the point is worth it.</p>
         <div class="hero-actions" aria-label="Primary actions">
-          <a class="button primary" href="./support/" data-i18n="home.notify">Contact support</a>
-          <a class="button secondary" href="./privacy/" data-i18n="home.privacyCta">Read privacy policy</a>
+          <span class="button primary inert" data-i18n="home.storeCta">App Store link coming soon</span>
+          <a class="button secondary" href="#screens" data-i18n="home.screensCta">See real game screens</a>
         </div>
         <dl class="trust-strip" aria-label="Game promises">
-          <div><dt data-i18n="home.promiseOneTitle">One unlock</dt><dd data-i18n="home.promiseOneText">No battle pass</dd></div>
-          <div><dt data-i18n="home.promiseTwoTitle">Optional ads</dt><dd data-i18n="home.promiseTwoText">Never forced</dd></div>
-          <div><dt data-i18n="home.promiseThreeTitle">Offline feel</dt><dd data-i18n="home.promiseThreeText">Built for short sessions</dd></div>
+          <div><dt data-i18n="home.promiseOneTitle">One unlock</dt><dd data-i18n="home.promiseOneText">Complete game, no battle pass</dd></div>
+          <div><dt data-i18n="home.promiseTwoTitle">Rally Depth</dt><dd data-i18n="home.promiseTwoText">Longer exchanges score bigger</dd></div>
+          <div><dt data-i18n="home.promiseThreeTitle">Short sessions</dt><dd data-i18n="home.promiseThreeText">Ninety seconds to five minutes</dd></div>
         </dl>
       </div>
 
-      <div class="game-visual" aria-label="Stylized RALLY gameplay visual">
-        <div class="phone-shell">
-          <div class="court-stage">
-            <div class="score-dots" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-            <div class="court-lines" aria-hidden="true"></div>
-            <div class="net" aria-hidden="true"></div>
-            <div class="brick-grid" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span><span></span>
-              <span></span><span></span><span></span><span></span><span></span><span></span>
-              <span></span><span></span><span></span><span></span><span></span><span></span>
-              <span></span><span></span><span></span><span></span><span></span><span></span>
-            </div>
-            <div class="gap-label" data-i18n="home.depth">Rally Depth 6</div>
-            <div class="ball-trail" aria-hidden="true"></div>
-            <div class="ball" aria-hidden="true"></div>
-            <div class="paddle" aria-hidden="true"></div>
-          </div>
+      <div class="hero-media" aria-label="RALLY gameplay screenshots">
+        <p class="media-label" data-i18n="home.realCapture">Captured from the current game build</p>
+        <div class="phone-frame hero-phone">
+          <img
+            data-screen-preview
+            src="./assets/rally-screen-rally.png"
+            alt="RALLY live match screenshot showing hard court, Rally Depth, bricks, ball, and paddle"
+            width="780"
+            height="1688"
+          >
         </div>
+        <div class="screen-picker" aria-label="Screenshot selector">
+          <button type="button" class="active" data-screen-choice data-screen-src="./assets/rally-screen-rally.png" data-caption-key="home.captureRally" data-i18n="home.captureRallyTab">Rally</button>
+          <button type="button" data-screen-choice data-screen-src="./assets/rally-screen-scouting.png" data-caption-key="home.captureScouting" data-i18n="home.captureScoutingTab">Scouting</button>
+          <button type="button" data-screen-choice data-screen-src="./assets/rally-screen-title.png" data-caption-key="home.captureMenu" data-i18n="home.captureMenuTab">Menu</button>
+        </div>
+        <p class="screen-caption" data-screen-caption data-i18n="home.captureRally">A live point: Rally Depth climbing while the opponent's coverage breaks open.</p>
       </div>
     </section>
 
-    <section id="gameplay" class="section-block">
+    <section id="screens" class="section-block screens-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="home.screensEyebrow">Actual game screens</p>
+        <h2 data-i18n="home.screensTitle">The public site now shows the game, not a placeholder.</h2>
+        <p class="section-lede" data-i18n="home.screensText">These are captures from the Canvas build: the title screen, scouting report, live hard-court match, and rally state with the ball in motion.</p>
+      </div>
+      <div class="screen-grid">
+        <figure>
+          <div class="phone-frame small-phone">
+            <img src="./assets/rally-screen-title.png" alt="RALLY title screen with mode buttons" width="780" height="1688" loading="lazy" decoding="async">
+          </div>
+          <figcaption><strong data-i18n="home.screenMenuTitle">Title and modes</strong><span data-i18n="home.screenMenuText">The player lands on the complete mobile game surface.</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone-frame small-phone">
+            <img src="./assets/rally-screen-scouting.png" alt="RALLY scouting report for Alex Reed on hard court" width="780" height="1688" loading="lazy" decoding="async">
+          </div>
+          <figcaption><strong data-i18n="home.screenScoutTitle">Scouting report</strong><span data-i18n="home.screenScoutText">Opponent style and surface set the tennis expectation.</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone-frame small-phone">
+            <img src="./assets/rally-screen-match.png" alt="RALLY match before serve with bricks as court coverage" width="780" height="1688" loading="lazy" decoding="async">
+          </div>
+          <figcaption><strong data-i18n="home.screenMatchTitle">Coverage grid</strong><span data-i18n="home.screenMatchText">The brick wall reads as a defender's court coverage.</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone-frame small-phone">
+            <img src="./assets/rally-screen-rally.png" alt="RALLY live rally with ball trail and Rally Depth" width="780" height="1688" loading="lazy" decoding="async">
+          </div>
+          <figcaption><strong data-i18n="home.screenRallyTitle">Rally in motion</strong><span data-i18n="home.screenRallyText">Depth, ball trail, and open lanes make the point readable.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="gameplay" class="section-block mechanics-section split-section">
       <div class="section-heading">
         <p class="eyebrow" data-i18n="home.systemEyebrow">The core idea</p>
         <h2 data-i18n="home.systemTitle">It feels like tennis because coverage matters.</h2>
+        <p class="section-lede" data-i18n="home.systemText">Every brick is defensive coverage. Every missing brick is open court. RALLY turns brick-breaker contact into a tennis decision: finish now, or keep the exchange alive for a bigger payoff.</p>
       </div>
-      <div class="feature-grid">
+      <div class="mechanic-grid">
         <article>
-          <span class="feature-icon coverage" aria-hidden="true"></span>
+          <span class="mechanic-number">01</span>
           <h3 data-i18n="home.featureOneTitle">Break coverage</h3>
-          <p data-i18n="home.featureOneText">Bricks are not decoration. They are the opponent's court position. A gap is open court.</p>
+          <p data-i18n="home.featureOneText">The opponent's grid shifts and repairs itself. You are not clearing a wall; you are pulling a defender out of position.</p>
         </article>
         <article>
-          <span class="feature-icon depth" aria-hidden="true"></span>
+          <span class="mechanic-number">02</span>
           <h3 data-i18n="home.featureTwoTitle">Build Rally Depth</h3>
-          <p data-i18n="home.featureTwoText">The longer you survive the exchange, the more valuable the finishing shot becomes.</p>
+          <p data-i18n="home.featureTwoText">Each net crossing raises the counter. At depth six and beyond, one clean gap can feel like a championship point.</p>
         </article>
         <article>
-          <span class="feature-icon shot" aria-hidden="true"></span>
-          <h3 data-i18n="home.featureThreeTitle">Shape the shot</h3>
-          <p data-i18n="home.featureThreeText">Flat, topspin, slice, lob, drop, and power finishes all read through simple one-hand gestures.</p>
+          <span class="mechanic-number">03</span>
+          <h3 data-i18n="home.featureThreeTitle">Finish the gap</h3>
+          <p data-i18n="home.featureThreeText">A safe finish banks the point. A greedy rally can multiply it. That tension is the whole game.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="section-block tennis-section">
+      <div class="tennis-copy">
+        <p class="eyebrow" data-i18n="home.tennisEyebrow">Tennis texture</p>
+        <h2 data-i18n="home.tennisTitle">Court, net, surface, opponent, shot.</h2>
+        <p data-i18n="home.tennisText">RALLY does not use tennis scoring language. It earns the sport through the court: hard-court speed, clay patience, grass deflections, asphalt acceleration, a visible net, and shots that match one-handed gestures.</p>
+      </div>
+      <div class="surface-strip" aria-label="Surface examples">
+        <span class="surface hard" data-i18n="surfaces.hard">Hard</span>
+        <span class="surface clay" data-i18n="surfaces.clay">Clay</span>
+        <span class="surface grass" data-i18n="surfaces.grass">Grass</span>
+        <span class="surface asphalt" data-i18n="surfaces.asphalt">Asphalt</span>
+      </div>
+    </section>
+
+    <section id="shots" class="section-block shots-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="home.shotsEyebrow">Shot language</p>
+        <h2 data-i18n="home.shotsTitle">One hand, real tennis intent.</h2>
+        <p class="section-lede" data-i18n="home.shotsText">RALLY keeps shots readable: no swipe is flat, upward pressure adds topspin, downward pressure slices, and advanced finishes change when the gap is worth the risk.</p>
+      </div>
+      <div class="shot-grid">
+        <article><span class="shot-glyph flat"></span><h3 data-i18n="shots.flat">Flat</h3><p data-i18n="shots.flatText">Direct, reliable, honest contact.</p></article>
+        <article><span class="shot-glyph topspin"></span><h3 data-i18n="shots.topspin">Topspin</h3><p data-i18n="shots.topspinText">Heavy arc that pushes through coverage.</p></article>
+        <article><span class="shot-glyph slice"></span><h3 data-i18n="shots.slice">Slice</h3><p data-i18n="shots.sliceText">Low, skidding control into awkward lanes.</p></article>
+        <article><span class="shot-glyph lob"></span><h3 data-i18n="shots.lob">Lob</h3><p data-i18n="shots.lobText">High clearance when the grid is too dense.</p></article>
+        <article><span class="shot-glyph drop"></span><h3 data-i18n="shots.drop">Drop</h3><p data-i18n="shots.dropText">Soft touch for a sudden short finish.</p></article>
+        <article><span class="shot-glyph smash"></span><h3 data-i18n="shots.smash">Smash</h3><p data-i18n="shots.smashText">A depth-gated exclamation point.</p></article>
+      </div>
+    </section>
+
+    <section id="modes" class="section-block modes-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="home.modesEyebrow">Complete modes</p>
+        <h2 data-i18n="home.modesTitle">Built for a finished premium game, not a calendar trap.</h2>
+        <p class="section-lede" data-i18n="home.modesText">The modes give different match rhythms without turning RALLY into a service game. Tournament is the spine; Daily, Hard Tour, Endless, and Weekly give skilled players more courts to master.</p>
+      </div>
+      <div class="mode-grid">
+        <article><span>01</span><h3 data-i18n="modes.tournamentTitle">Tournament</h3><p data-i18n="modes.tournamentText">A clean bracket climb toward the Champion.</p></article>
+        <article><span>02</span><h3 data-i18n="modes.dailyTitle">Daily Challenge</h3><p data-i18n="modes.dailyText">One seeded puzzle-match with a strict modifier.</p></article>
+        <article><span>03</span><h3 data-i18n="modes.hardTitle">Hard Tour</h3><p data-i18n="modes.hardText">Sharper opponents after the main tour is understood.</p></article>
+        <article><span>04</span><h3 data-i18n="modes.endlessTitle">Endless</h3><p data-i18n="modes.endlessText">A pressure run where modifiers stack and mistakes matter.</p></article>
+        <article><span>05</span><h3 data-i18n="modes.weeklyTitle">Weekly Tournament</h3><p data-i18n="modes.weeklyText">A compact seeded bracket for a fresh mastery target.</p></article>
       </div>
     </section>
 
@@ -110,8 +201,8 @@
       </div>
       <div class="proof-list">
         <p data-i18n="home.proofOne">A free demo introduces the core match loop before the full unlock.</p>
-        <p data-i18n="home.proofTwo">Rewarded ads, where available, are optional and user-started.</p>
-        <p data-i18n="home.proofThree">Tournament, mastery modes, accessibility settings, restore purchase, privacy, terms, and support are all part of the release checklist.</p>
+        <p data-i18n="home.proofTwo">The full game is one purchase. Optional rewarded ads are user-started and never interrupt play.</p>
+        <p data-i18n="home.proofThree">Accessibility settings, restore purchase, privacy, terms, and support are release features, not afterthoughts.</p>
       </div>
     </section>
 

@@ -215,6 +215,227 @@ const RALLY_I18N = {
   },
 };
 
+const RALLY_SITE_UPGRADE_I18N = {
+  en: {
+    common: { screens: "Screens", shots: "Shots", modes: "Modes" },
+    home: {
+      storeCta: "App Store link coming soon",
+      screensCta: "See real game screens",
+      realCapture: "Captured from the current game build",
+      hudOpponent: "Sofia",
+      callout: "CHAMPIONSHIP!",
+      heroText: "Read the opponent's brick coverage like court positioning. Keep the exchange alive, build Rally Depth, and finish the open lane when the point is worth it.",
+      promiseOneText: "Complete game, no battle pass",
+      promiseTwoTitle: "Rally Depth",
+      promiseTwoText: "Longer exchanges score bigger",
+      promiseThreeText: "Ninety seconds to five minutes",
+      captureRallyTab: "Rally",
+      captureScoutingTab: "Scouting",
+      captureMenuTab: "Menu",
+      captureRally: "A live point: Rally Depth climbing while the opponent's coverage breaks open.",
+      captureScouting: "The scouting card frames each match like a tennis opponent, not a generic level.",
+      captureMenu: "The title screen shows the complete game surface and modes from the actual build.",
+      screensEyebrow: "Actual game screens",
+      screensTitle: "The public site now shows the game, not a placeholder.",
+      screensText: "These are captures from the Canvas build: the title screen, scouting report, live hard-court match, and rally state with the ball in motion.",
+      screenMenuTitle: "Title and modes",
+      screenMenuText: "The player lands on the complete mobile game surface.",
+      screenScoutTitle: "Scouting report",
+      screenScoutText: "Opponent style and surface set the tennis expectation.",
+      screenMatchTitle: "Coverage grid",
+      screenMatchText: "The brick wall reads as a defender's court coverage.",
+      screenRallyTitle: "Rally in motion",
+      screenRallyText: "Depth, ball trail, and open lanes make the point readable.",
+      systemText: "Every brick is defensive coverage. Every missing brick is open court. RALLY turns the familiar brick-breaker collision into a tennis decision: finish now, or keep the exchange alive for a bigger payoff.",
+      featureOneText: "The opponent's grid shifts and repairs itself. You are not clearing a wall; you are moving a defender out of position.",
+      featureTwoText: "Each net crossing raises the counter. At depth six and beyond, one clean gap can feel like a championship point.",
+      featureThreeTitle: "Finish the gap",
+      featureThreeText: "A safe finish banks the point. A greedy rally can multiply it. That tension is the whole game.",
+      tennisEyebrow: "Tennis texture",
+      tennisTitle: "Court, net, surface, opponent, shot.",
+      tennisText: "RALLY does not use tennis scoring language. It earns the sport through the court: hard-court speed, clay patience, grass deflections, asphalt acceleration, a visible net, and shots that match one-handed gestures.",
+      shotsEyebrow: "Shot language",
+      shotsTitle: "One hand, real tennis intent.",
+      shotsText: "RALLY keeps shots readable: no swipe is flat, upward pressure adds topspin, downward pressure slices, and advanced finishes change when the gap is worth the risk.",
+      modesEyebrow: "Complete modes",
+      modesTitle: "Built for a finished premium game, not a calendar trap.",
+      modesText: "The modes give different match rhythms without turning RALLY into a service game. Tournament is the spine; Daily, Hard Tour, Endless, and Weekly give skilled players more courts to master.",
+      proofTwo: "The full game is one purchase. Optional rewarded ads are user-started and never interrupt play.",
+      proofThree: "Accessibility settings, restore purchase, privacy, terms, and support are release features, not afterthoughts.",
+    },
+    shots: {
+      flat: "Flat",
+      topspin: "Topspin",
+      slice: "Slice",
+      lob: "Lob",
+      drop: "Drop",
+      smash: "Smash",
+      flatText: "Direct, reliable, honest contact.",
+      topspinText: "Heavy arc that pushes through coverage.",
+      sliceText: "Low, skidding control into awkward lanes.",
+      lobText: "High clearance when the grid is too dense.",
+      dropText: "Soft touch for a sudden short finish.",
+      smashText: "A depth-gated exclamation point.",
+    },
+    modes: {
+      tournamentTitle: "Tournament",
+      tournamentText: "A clean bracket climb toward the Champion.",
+      dailyTitle: "Daily Challenge",
+      dailyText: "One seeded puzzle-match with a strict modifier.",
+      hardTitle: "Hard Tour",
+      hardText: "Sharper opponents after the main tour is understood.",
+      endlessTitle: "Endless",
+      endlessText: "A pressure run where modifiers stack and mistakes matter.",
+      weeklyTitle: "Weekly Tournament",
+      weeklyText: "A compact seeded bracket for a fresh mastery target.",
+    },
+    surfaces: {
+      hard: "Hard",
+      clay: "Clay",
+      grass: "Grass",
+      asphalt: "Asphalt",
+    },
+  },
+  ar: {
+    common: { screens: "الشاشات", shots: "الضربات", modes: "الأوضاع" },
+    home: {
+      storeCta: "رابط App Store قريبًا",
+      screensCta: "شاهد لقطات حقيقية",
+      realCapture: "مأخوذة من نسخة اللعبة الحالية",
+      hudOpponent: "صوفيا",
+      callout: "بطولة!",
+      heroText: "اقرأ تغطية الخصم بالطوب كأنها تمركز على الملعب. أبقِ التبادل حيًا، ابن عمق الرالي، وأنهِ المسار المفتوح عندما تستحق النقطة المخاطرة.",
+      promiseOneText: "لعبة كاملة بلا باتل باس",
+      promiseTwoTitle: "عمق الرالي",
+      promiseTwoText: "التبادلات الأطول تسجل أكثر",
+      promiseThreeText: "من تسعين ثانية إلى خمس دقائق",
+      captureRallyTab: "رالي",
+      captureScoutingTab: "استطلاع",
+      captureMenuTab: "القائمة",
+      captureRally: "نقطة حية: عمق الرالي يرتفع بينما تنكسر تغطية الخصم.",
+      captureScouting: "بطاقة الاستطلاع تجعل كل مباراة تبدو كخصم تنس لا كمرحلة عادية.",
+      captureMenu: "شاشة العنوان تعرض أوضاع اللعبة الفعلية من النسخة الحالية.",
+      screensEyebrow: "شاشات فعلية من اللعبة",
+      screensTitle: "الموقع يعرض اللعبة الآن، لا بديلًا مرسومًا.",
+      screensText: "هذه لقطات من نسخة Canvas: العنوان، الاستطلاع، مباراة على ملعب صلب، ورالي والكرة تتحرك.",
+      screenMenuTitle: "العنوان والأوضاع",
+      screenMenuText: "يدخل اللاعب مباشرة إلى سطح اللعبة الكامل.",
+      screenScoutTitle: "تقرير الخصم",
+      screenScoutText: "أسلوب الخصم والملعب يضعان إحساس التنس.",
+      screenMatchTitle: "شبكة التغطية",
+      screenMatchText: "جدار الطوب يُقرأ كتغطية ملعب الخصم.",
+      screenRallyTitle: "الرالي يتحرك",
+      screenRallyText: "العمق ومسار الكرة والفراغات تجعل النقطة مفهومة.",
+      systemText: "كل طوبة هي تغطية دفاعية. كل طوبة مفقودة هي ملعب مفتوح. تحول RALLY التصادم المألوف إلى قرار تنس: أنهِ الآن أو أبقِ التبادل حيًا لقيمة أكبر.",
+      featureOneText: "شبكة الخصم تتحرك وتصلح نفسها. أنت لا تزيل جدارًا؛ أنت تحرك مدافعًا خارج موقعه.",
+      featureTwoText: "كل عبور للشبكة يرفع العداد. عند العمق السادس وما بعده، قد يشعر الفراغ النظيف كنقطة بطولة.",
+      featureThreeTitle: "أنهِ الفراغ",
+      featureThreeText: "النهاية الآمنة تحفظ النقطة. الرالي الجريء قد يضاعفها. هذا التوتر هو اللعبة.",
+      tennisEyebrow: "ملمس التنس",
+      tennisTitle: "ملعب، شبكة، سطح، خصم، ضربة.",
+      tennisText: "لا تستخدم RALLY لغة نقاط التنس. اللعبة تكسب الإحساس من الملعب: سرعة الهارد، صبر الطين، انحراف العشب، تسارع الأسفلت، وشبكة واضحة وضربات بإيماءات يد واحدة.",
+      shotsEyebrow: "لغة الضربات",
+      shotsTitle: "يد واحدة، نية تنس حقيقية.",
+      shotsText: "تبقي RALLY الضربات واضحة: بلا تمرير تكون مستقيمة، الضغط للأعلى يضيف توبسبن، والأسفل يضيف سلايس.",
+      modesEyebrow: "أوضاع كاملة",
+      modesTitle: "مبنية كلعبة مميزة مكتملة، لا فخ تقويم.",
+      modesText: "الأوضاع تمنح إيقاعات مختلفة دون تحويل RALLY إلى لعبة خدمة. البطولة هي العمود، واليومي والهارد تور واللامتناهي والأسبوعي تضيف أهداف إتقان.",
+      proofTwo: "اللعبة الكاملة شراء واحد. الإعلانات المكافئة اختيارية ولا تقاطع اللعب.",
+      proofThree: "إعدادات الوصول واستعادة الشراء والخصوصية والشروط والدعم ميزات إصدار وليست إضافات لاحقة.",
+    },
+    shots: {
+      flat: "مستقيمة", topspin: "توبسبن", slice: "سلايس", lob: "لوب", drop: "دروب", smash: "سماش",
+      flatText: "اتصال مباشر وموثوق.", topspinText: "قوس ثقيل يخترق التغطية.", sliceText: "تحكم منخفض في مسارات صعبة.", lobText: "ارتفاع آمن عندما تكون الشبكة كثيفة.", dropText: "لمسة ناعمة لإنهاء قصير.", smashText: "علامة تعجب مرتبطة بعمق الرالي.",
+    },
+    modes: {
+      tournamentTitle: "البطولة", tournamentText: "صعود واضح في bracket نحو البطل.", dailyTitle: "تحدي يومي", dailyText: "مباراة لغز ببذرة ومعدّل صارم.", hardTitle: "هارد تور", hardText: "خصوم أصعب بعد فهم الجولة الرئيسية.", endlessTitle: "لامتناهي", endlessText: "جولة ضغط تتراكم فيها المعدّلات.", weeklyTitle: "بطولة أسبوعية", weeklyText: "Bracket قصير لهدف إتقان جديد.",
+    },
+    surfaces: { hard: "صلب", clay: "طين", grass: "عشب", asphalt: "أسفلت" },
+  },
+  es: {
+    common: { screens: "Pantallas", shots: "Golpes", modes: "Modos" },
+    home: {
+      storeCta: "App Store próximamente", screensCta: "Ver pantallas reales", realCapture: "Capturado desde la versión actual", hudOpponent: "Sofia", callout: "CAMPEONATO!",
+      heroText: "Lee la cobertura de ladrillos como posición en la pista. Mantén el intercambio, sube Rally Depth y cierra el carril abierto cuando el punto lo merezca.",
+      promiseOneText: "Juego completo, sin pase de batalla", promiseTwoTitle: "Rally Depth", promiseTwoText: "Los intercambios largos valen más", promiseThreeText: "De noventa segundos a cinco minutos",
+      captureRallyTab: "Rally", captureScoutingTab: "Scouting", captureMenuTab: "Menú",
+      captureRally: "Un punto en vivo: Rally Depth sube mientras se abre la cobertura rival.",
+      captureScouting: "La tarjeta de scouting presenta cada partido como un rival de tenis.",
+      captureMenu: "La pantalla inicial muestra modos reales de la build actual.",
+      screensEyebrow: "Pantallas reales", screensTitle: "El sitio muestra el juego, no un marcador provisional.", screensText: "Capturas de la build Canvas: título, scouting, partido en pista dura y rally en movimiento.",
+      screenMenuTitle: "Título y modos", screenMenuText: "El jugador llega a la superficie completa del juego.", screenScoutTitle: "Informe del rival", screenScoutText: "Estilo y superficie fijan la expectativa de tenis.", screenMatchTitle: "Cuadrícula de cobertura", screenMatchText: "El muro de ladrillos se lee como cobertura defensiva.", screenRallyTitle: "Rally en movimiento", screenRallyText: "Profundidad, estela y huecos hacen legible el punto.",
+      systemText: "Cada ladrillo es cobertura defensiva. Cada ladrillo ausente es pista abierta. RALLY convierte el choque de brick-breaker en una decisión de tenis.",
+      featureOneText: "La cuadrícula rival se mueve y se repara. No limpias un muro; sacas al defensor de posición.",
+      featureTwoText: "Cada cruce de red sube el contador. En profundidad seis, un hueco limpio puede sentirse como punto de campeonato.",
+      featureThreeTitle: "Cierra el hueco", featureThreeText: "Un cierre seguro cobra el punto. Un rally ambicioso puede multiplicarlo.",
+      tennisEyebrow: "Textura de tenis", tennisTitle: "Pista, red, superficie, rival, golpe.", tennisText: "RALLY no usa puntuación de tenis. Gana el deporte con la pista: velocidad dura, paciencia en arcilla, desvíos en hierba, aceleración en asfalto, red visible y gestos de una mano.",
+      shotsEyebrow: "Lenguaje de golpes", shotsTitle: "Una mano, intención real de tenis.", shotsText: "Sin gesto es plano, hacia arriba añade topspin, hacia abajo corta, y los finales avanzados cambian cuando el hueco merece el riesgo.",
+      modesEyebrow: "Modos completos", modesTitle: "Hecho como juego premium terminado, no como trampa de calendario.", modesText: "Los modos cambian el ritmo sin volver RALLY un servicio. Torneo es la columna; Diario, Hard Tour, Endless y Semanal añaden dominio.",
+      proofTwo: "El juego completo es una compra. Los anuncios recompensados son opcionales y nunca interrumpen.", proofThree: "Accesibilidad, restaurar compra, privacidad, términos y soporte son funciones de lanzamiento.",
+    },
+    shots: { flat: "Plano", topspin: "Topspin", slice: "Slice", lob: "Globo", drop: "Dejada", smash: "Remate", flatText: "Contacto directo y fiable.", topspinText: "Arco pesado que atraviesa cobertura.", sliceText: "Control bajo en carriles incómodos.", lobText: "Altura segura cuando la red está densa.", dropText: "Toque suave para cerrar corto.", smashText: "Un final ligado a la profundidad." },
+    modes: { tournamentTitle: "Torneo", tournamentText: "Escalada limpia hacia el Campeón.", dailyTitle: "Desafío diario", dailyText: "Un partido-puzle con modificador estricto.", hardTitle: "Hard Tour", hardText: "Rivales más duros tras entender el tour.", endlessTitle: "Endless", endlessText: "Una carrera de presión con modificadores.", weeklyTitle: "Torneo semanal", weeklyText: "Bracket compacto para dominar." },
+    surfaces: { hard: "Dura", clay: "Arcilla", grass: "Hierba", asphalt: "Asfalto" },
+  },
+  fr: {
+    common: { screens: "Écrans", shots: "Coups", modes: "Modes" },
+    home: {
+      storeCta: "Lien App Store bientôt", screensCta: "Voir les vrais écrans", realCapture: "Capturé depuis la version actuelle", hudOpponent: "Sofia", callout: "CHAMPIONNAT!",
+      heroText: "Lisez la couverture de briques comme un placement de court. Gardez l'échange, construisez Rally Depth et concluez le couloir ouvert au bon moment.",
+      promiseOneText: "Jeu complet, pas de battle pass", promiseTwoTitle: "Rally Depth", promiseTwoText: "Les longs échanges valent plus", promiseThreeText: "De 90 secondes à cinq minutes",
+      captureRallyTab: "Rally", captureScoutingTab: "Scouting", captureMenuTab: "Menu",
+      captureRally: "Un point en direct: Rally Depth monte pendant que la couverture adverse s'ouvre.",
+      captureScouting: "La carte de scouting présente chaque match comme un adversaire de tennis.",
+      captureMenu: "L'écran titre montre les modes réels de la version actuelle.",
+      screensEyebrow: "Écrans réels", screensTitle: "Le site montre maintenant le jeu, pas un substitut.", screensText: "Captures de la version Canvas: titre, scouting, match sur dur et rally en mouvement.",
+      screenMenuTitle: "Titre et modes", screenMenuText: "Le joueur arrive sur la surface complète du jeu.", screenScoutTitle: "Rapport adverse", screenScoutText: "Style et surface posent l'attente tennis.", screenMatchTitle: "Grille de couverture", screenMatchText: "Le mur de briques devient une couverture défensive.", screenRallyTitle: "Rally en mouvement", screenRallyText: "Profondeur, trajectoire et ouvertures rendent le point lisible.",
+      systemText: "Chaque brique est une couverture défensive. Chaque brique absente est un court ouvert. RALLY transforme la collision en décision de tennis.",
+      featureOneText: "La grille adverse bouge et se répare. Vous ne videz pas un mur; vous déplacez un défenseur.",
+      featureTwoText: "Chaque passage du filet augmente le compteur. À six, un trou propre peut ressembler à une balle de championnat.",
+      featureThreeTitle: "Conclure l'ouverture", featureThreeText: "Une fin sûre encaisse le point. Un échange plus gourmand peut le multiplier.",
+      tennisEyebrow: "Texture tennis", tennisTitle: "Court, filet, surface, adversaire, coup.", tennisText: "RALLY n'utilise pas le score tennis. Le sport vient du court: vitesse du dur, patience de la terre, rebonds d'herbe, accélération asphaltée, filet visible et gestes à une main.",
+      shotsEyebrow: "Langage des coups", shotsTitle: "Une main, une vraie intention tennis.", shotsText: "Sans geste: plat. Vers le haut: lift. Vers le bas: slice. Les finitions avancées changent quand le risque vaut le coup.",
+      modesEyebrow: "Modes complets", modesTitle: "Pensé comme un premium fini, pas un piège de calendrier.", modesText: "Les modes changent le rythme sans transformer RALLY en jeu-service. Tournoi est la colonne; Quotidien, Hard Tour, Endless et Hebdo ajoutent la maîtrise.",
+      proofTwo: "Le jeu complet est un achat. Les pubs récompensées sont optionnelles et ne coupent jamais le jeu.", proofThree: "Accessibilité, restauration, confidentialité, conditions et assistance sont des fonctions de sortie.",
+    },
+    shots: { flat: "Plat", topspin: "Lift", slice: "Slice", lob: "Lob", drop: "Amorti", smash: "Smash", flatText: "Contact direct et fiable.", topspinText: "Arc lourd qui traverse la couverture.", sliceText: "Contrôle bas dans les couloirs difficiles.", lobText: "Hauteur sûre quand la grille est dense.", dropText: "Toucher doux pour finir court.", smashText: "Une exclamation liée à la profondeur." },
+    modes: { tournamentTitle: "Tournoi", tournamentText: "Une montée claire vers le Champion.", dailyTitle: "Défi quotidien", dailyText: "Un match-puzzle avec modificateur strict.", hardTitle: "Hard Tour", hardText: "Adversaires plus durs après le tour principal.", endlessTitle: "Endless", endlessText: "Une course de pression avec modificateurs.", weeklyTitle: "Tournoi hebdo", weeklyText: "Bracket compact pour une nouvelle cible." },
+    surfaces: { hard: "Dur", clay: "Terre", grass: "Herbe", asphalt: "Asphalte" },
+  },
+};
+
+for (const lang of ["de", "pt", "it", "ja", "ko", "zh"]) {
+  RALLY_SITE_UPGRADE_I18N[lang] = {
+    ...RALLY_SITE_UPGRADE_I18N.en,
+    common: {
+      ...RALLY_SITE_UPGRADE_I18N.en.common,
+      screens: { de: "Screens", pt: "Telas", it: "Schermi", ja: "画面", ko: "화면", zh: "画面" }[lang],
+      shots: { de: "Schläge", pt: "Golpes", it: "Colpi", ja: "ショット", ko: "샷", zh: "击球" }[lang],
+      modes: { de: "Modi", pt: "Modos", it: "Modalità", ja: "モード", ko: "모드", zh: "模式" }[lang],
+    },
+    home: {
+      ...RALLY_SITE_UPGRADE_I18N.en.home,
+      storeCta: { de: "App Store Link bald verfügbar", pt: "Link da App Store em breve", it: "Link App Store in arrivo", ja: "App Store リンク準備中", ko: "App Store 링크 준비 중", zh: "App Store 链接即将推出" }[lang],
+      callout: { de: "MEISTERSCHAFT!", pt: "CAMPEONATO!", it: "CAMPIONATO!", ja: "CHAMPIONSHIP!", ko: "챔피언십!", zh: "冠军时刻!" }[lang],
+      promiseOneText: { de: "Komplettes Spiel, kein Battle Pass", pt: "Jogo completo, sem passe", it: "Gioco completo, niente pass", ja: "完全版、バトルパスなし", ko: "완성된 게임, 배틀패스 없음", zh: "完整游戏，无通行证" }[lang],
+      promiseTwoText: { de: "Längere Ballwechsel zählen mehr", pt: "Trocas longas valem mais", it: "Scambi lunghi valgono di più", ja: "長いラリーほど高得点", ko: "긴 랠리일수록 더 큰 점수", zh: "回合越长分值越高" }[lang],
+      shotsEyebrow: { de: "Schlag-Sprache", pt: "Linguagem dos golpes", it: "Linguaggio dei colpi", ja: "ショット表現", ko: "샷 언어", zh: "击球语言" }[lang],
+      modesEyebrow: { de: "Vollständige Modi", pt: "Modos completos", it: "Modalità complete", ja: "完成されたモード", ko: "완성된 모드", zh: "完整模式" }[lang],
+    },
+  };
+}
+
+function mergeI18n(target, source) {
+  Object.keys(source).forEach((lang) => {
+    target[lang] = target[lang] || {};
+    Object.keys(source[lang]).forEach((group) => {
+      target[lang][group] = { ...(target[lang][group] || {}), ...source[lang][group] };
+    });
+  });
+}
+
+mergeI18n(RALLY_I18N, RALLY_SITE_UPGRADE_I18N);
+
 const FALLBACK_LANG = "en";
 const RTL_LANGS = new Set(["ar"]);
 
@@ -226,36 +447,91 @@ function requestedLanguage() {
   const params = new URLSearchParams(window.location.search);
   const fromUrl = params.get("lang");
   if (fromUrl && RALLY_I18N[fromUrl]) return fromUrl;
-  const saved = window.localStorage.getItem("rally-site-language");
+  let saved = null;
+  try {
+    saved = window.localStorage.getItem("rally-site-language");
+  } catch (_) {
+    saved = null;
+  }
   if (saved && RALLY_I18N[saved]) return saved;
-  const browserLang = (navigator.language || "").slice(0, 2);
+  const browserLang = (navigator.language || "").slice(0, 2).toLowerCase();
   return RALLY_I18N[browserLang] ? browserLang : FALLBACK_LANG;
 }
 
 function applyLanguage(lang) {
-  const dictionary = RALLY_I18N[lang] || RALLY_I18N[FALLBACK_LANG];
-  document.documentElement.lang = lang;
-  document.body.dir = RTL_LANGS.has(lang) ? "rtl" : "ltr";
+  const safeLang = RALLY_I18N[lang] ? lang : FALLBACK_LANG;
+  const dictionary = RALLY_I18N[safeLang] || RALLY_I18N[FALLBACK_LANG];
+  const direction = RTL_LANGS.has(safeLang) ? "rtl" : "ltr";
+  document.documentElement.lang = safeLang;
+  document.documentElement.dir = direction;
+  document.body.dir = direction;
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.getAttribute("data-i18n");
     const value = getNestedValue(dictionary, key) || getNestedValue(RALLY_I18N[FALLBACK_LANG], key);
     if (value) node.textContent = value;
   });
   document.querySelectorAll("[data-language-select]").forEach((select) => {
-    select.value = lang;
+    select.value = safeLang;
   });
-  window.localStorage.setItem("rally-site-language", lang);
+  try {
+    window.localStorage.setItem("rally-site-language", safeLang);
+  } catch (_) {
+    // Storage can be unavailable in some private browsing contexts.
+  }
 
   const path = window.location.pathname;
   if (path.includes("/privacy/")) document.title = dictionary.privacy?.title || RALLY_I18N.en.privacy.title;
   else if (path.includes("/terms/")) document.title = dictionary.terms?.title || RALLY_I18N.en.terms.title;
   else if (path.includes("/support/")) document.title = dictionary.support?.title || RALLY_I18N.en.support.title;
-  else document.title = lang === "en" ? "RALLY - Tennis Becomes Territory" : `RALLY - ${dictionary.home.heroTitle}`;
+  else document.title = safeLang === "en" ? "RALLY - Tennis Becomes Territory" : `RALLY - ${dictionary.home.heroTitle}`;
+}
+
+function initShotPreview() {
+  const preview = document.querySelector("[data-shot-preview]");
+  if (!preview) return;
+
+  const buttons = Array.from(document.querySelectorAll("[data-shot-choice]"));
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const shot = button.getAttribute("data-shot-choice") || "topspin";
+      preview.dataset.shot = shot;
+      buttons.forEach((item) => item.classList.toggle("active", item === button));
+    });
+  });
+}
+
+function setTranslatedText(node, key) {
+  const lang = document.documentElement.lang || FALLBACK_LANG;
+  const dictionary = RALLY_I18N[lang] || RALLY_I18N[FALLBACK_LANG];
+  const value = getNestedValue(dictionary, key) || getNestedValue(RALLY_I18N[FALLBACK_LANG], key);
+  if (value) node.textContent = value;
+}
+
+function initScreenPreview() {
+  const preview = document.querySelector("[data-screen-preview]");
+  const caption = document.querySelector("[data-screen-caption]");
+  const buttons = Array.from(document.querySelectorAll("[data-screen-choice]"));
+  if (!preview || buttons.length === 0) return;
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const src = button.getAttribute("data-screen-src");
+      const captionKey = button.getAttribute("data-caption-key");
+      if (src) preview.setAttribute("src", src);
+      buttons.forEach((item) => item.classList.toggle("active", item === button));
+      if (caption && captionKey) {
+        caption.setAttribute("data-i18n", captionKey);
+        setTranslatedText(caption, captionKey);
+      }
+    });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const initial = requestedLanguage();
   applyLanguage(initial);
+  initShotPreview();
+  initScreenPreview();
   document.querySelectorAll("[data-language-select]").forEach((select) => {
     select.addEventListener("change", (event) => {
       applyLanguage(event.target.value);
